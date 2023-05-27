@@ -19,6 +19,22 @@ public class _01_Intro {
      @AfterSuit
    */
 
+    @BeforeSuite
+    void bSuit() {
+        System.out.println("Before Suite");
+    }
+
+    @BeforeTest
+    void bTest() {
+        System.out.println("Before Test");
+    }
+
+
+    @BeforeGroups
+    void bGroups() {
+        System.out.println("Before Groups");
+    }
+
     @BeforeClass
     void bClass() {
         System.out.println("Before Class");
@@ -31,12 +47,12 @@ public class _01_Intro {
     }
 
     @Test
-    void _03_Intro_Test1(){
+    void _03_Intro_Test1() {
         System.out.println("Intro_3 -> Test 1");
     }
 
     @Test
-    void _03_Intro_Test2(){
+    void _03_Intro_Test2() {
         System.out.println("Intro_3-> Test 2");
     }
 
@@ -50,6 +66,25 @@ public class _01_Intro {
         System.out.println("After Class");
     }
 
+    @AfterGroups
+    void aGroups() {
+        System.out.println("After Groups");
+    }
 
+    @AfterTest
+    void aTest(){
+        System.out.println("After Suit");
+    }
+
+    @AfterSuite
+    void aSuite() {
+        System.out.println("After Suite");
+
+
+    }
 
 }
+
+
+
+
